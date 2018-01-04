@@ -11,9 +11,10 @@ namespace videoconvert
 {
     class Program
     {
+        public static string Extension = "mp4";
         public static string ConfigFile = "videos.csv";
-        public static string VideoNameTemplate = "v{0}.webm";
-        public static string VideoIntroNameTemplate = "intro_{0}.webm";
+        public static string VideoNameTemplate = "v{0}." + Extension;
+        public static string VideoIntroNameTemplate = "intro_{0}." + Extension;
 
         static void Main(string[] args)
         {
